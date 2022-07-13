@@ -5,16 +5,16 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "export": "next export",
     "start": "next start",
     "lint": "next lint",
-    "export": "next export",
     "prepare": "husky install",
-    "check": "npx prettier --check .",
-    "format": "npx prettier --write .",
-    "eslint": "npx eslint ."
+    "format": "prettier --write .",
+    "check": "prettier --check .",
+    "eslint": "eslint . --ext js --ext jsx --ext ts --ext tsx"
   },
   "dependencies": {
-    "next": "12.2.1",
+    "next": "12.2.2",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
@@ -31,6 +31,9 @@
     "eslint-plugin-react": "^7.30.1",
     "prettier": "^2.7.1",
     "typescript": "4.7.4",
-    "husky": "^8.0.0"
+    "husky": "^8.0.0",
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.1.5"
   }
 }
