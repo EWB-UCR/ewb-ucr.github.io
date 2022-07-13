@@ -3,7 +3,8 @@
 
 echo 'Will proceed to check code format and lint! 😁'
 
-npm run format || (
+
+npm run check || (
     echo 'Issues with code formatting! Please use Prettier and refer to above errors! 🚫'
     false;
 )
